@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatefulWidget {
+class OnBoardingScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => LaunchState();
 }
 
-class LaunchState extends State<SplashScreen> {
+class LaunchState extends State<OnBoardingScreen> {
   @override
   Widget build(BuildContext context) {
-    return initScreen(context);
+    return null;
   }
 
-  initScreen(BuildContext context) {
+  initScreen() {
     return Scaffold();
   }
 }
