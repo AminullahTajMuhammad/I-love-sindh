@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'on_boarding_screen.dart';
+import '../on_boarding/on_boarding_screen.dart';
+import '../on_boarding/slider_views.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -29,7 +30,7 @@ class LaunchState extends State<SplashScreen> {
   }
 
   route() {
-    return Navigator.pushReplacement(
+    Navigator.pushReplacement(
       context,
       MaterialPageRoute(
         builder: (context) => OnBoardingScreen()
