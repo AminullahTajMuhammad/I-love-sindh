@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Constants {
   static final String TITLE1 = "Khairpur";
   static final String TITLE2 = "Moen-Jo-Daro";
@@ -6,4 +8,6 @@ class Constants {
   static final String DESC1 = "Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum";
   static final String DESC2 = "Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum";
   static final String DESC3 = "Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum";
+
+  static final PRIMARY_COLOR = 0xffE89B46;
 }

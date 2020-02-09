@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:i_love_sindh/constants/constants.dart';
 import 'package:i_love_sindh/models/slide_model.dart';
 import 'slider_views.dart';
 import 'package:i_love_sindh/widgets/slider_dots.dart';
@@ -12,39 +13,27 @@ class OnBoardingScreen extends StatefulWidget {
 }
 
 class LaunchState extends State<OnBoardingScreen> {
-  int _currentPage = 0;
-  final PageController _pageController = PageController(initialPage: 0);
+  int _currentPage;
+  PageController _pageController;
 
   @override
   void initState() {
-    // TODO: implement initState
+    _currentPage = 0;
     super.initState();
-//    Timer.periodic(Duration(seconds: 5), (Timer _timer) {
-//      _currentPage > 2 ? _currentPage++ : _currentPage = 0;
-//    });
   }
 
-//  @override
-//  void dispose() {
-//    // TODO: implement dispose
-//    super.dispose();
-//    _pageController.dispose();
-//  }
-
-  _onPageChanged(int index) {
-    setState(() {
-      _currentPage = index;
-    });
+  _onPageChanged(int value) {
+    setState(() => _currentPage = value);
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10.0),
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: <Widget>[
           PageView.builder(
+            physics: ClampingScrollPhysics(),
             scrollDirection: Axis.horizontal,
             controller: _pageController,
             onPageChanged: _onPageChanged,
@@ -56,19 +45,23 @@ class LaunchState extends State<OnBoardingScreen> {
             alignment: AlignmentDirectional.topStart,
             children: <Widget>[
               Container(
-                alignment: AlignmentDirectional.bottomCenter,
-                margin: EdgeInsets.only(bottom: 30.0),
+                margin: EdgeInsets.only(bottom: 35),
                 child: Row(
+                  mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    for(int i=0; i<slideItemList.length; i++)
-                      i == _currentPage ? SliderDots(true) : SliderDots(false)
+                    for (int i = 0; i < slideItemList.length; i++)
+                      i == _currentPage
+                          ? SliderDots(true)
+                          : SliderDots(false),
                   ],
                 ),
               ),
-              _currentPage >= 2 ? showDoneButton(true) : showDoneButton(false)
             ],
-          )
+          ),
+          _currentPage == slideItemList.length-1
+                  ? showDoneButton(true)
+                  : showDoneButton(false)
         ],
       ),
     );
@@ -86,7 +79,7 @@ class LaunchState extends State<OnBoardingScreen> {
               builder: (context) => MainLandingScreen(),
             ));
           },
-          backgroundColor: Color(0xffE89B46),
+          backgroundColor: Color(Constants.PRIMARY_COLOR),
           child: Icon(
             Icons.done,
             color: Colors.white,
