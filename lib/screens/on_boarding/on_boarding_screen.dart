@@ -5,7 +5,7 @@ import 'package:i_love_sindh/constants/constants.dart';
 import 'package:i_love_sindh/models/slide_model.dart';
 import 'slider_views.dart';
 import 'package:i_love_sindh/widgets/slider_dots.dart';
-import 'package:i_love_sindh/screens/main/main_landing_screen.dart';
+import 'package:i_love_sindh/screens/main/bottom_navigation_screen.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   @override
@@ -24,6 +24,12 @@ class LaunchState extends State<OnBoardingScreen> {
 
   _onPageChanged(int value) {
     setState(() => _currentPage = value);
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
   }
 
   @override

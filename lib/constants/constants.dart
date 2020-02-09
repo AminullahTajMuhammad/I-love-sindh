@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Constants {
   static final String TITLE1 = "Khairpur";
   static final String TITLE2 = "Moen-Jo-Daro";
