@@ -86,7 +86,7 @@ class LaunchHomeState extends State<HomeScreen> {
                       ),
                     ),
                     Text(
-                      "(The place where history exists)",
+                      "(Historical places in pakistan)",
                       style: TextStyle(
                           color: Colors.red,
                           fontWeight: FontWeight.bold,
