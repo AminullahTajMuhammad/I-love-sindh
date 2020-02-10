@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:i_love_sindh/constants/constants.dart';
-import 'package:i_love_sindh/screens/splash/splash_screen.dart';
 
 class AboutScreen extends StatelessWidget {
   @override
@@ -159,148 +158,148 @@ class AboutScreen extends StatelessWidget {
 
           // Author Container
           Container(
-              margin: EdgeInsets.all(10),
-              child: SizedBox(
-                height: 200,
-                width: MediaQuery.of(context).size.width,
-                child: Card(
-                  elevation: 5,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
+            margin: EdgeInsets.all(10),
+            child: SizedBox(
+              height: 200,
+              width: MediaQuery.of(context).size.width,
+              child: Card(
+                elevation: 5,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
 
-                      //Author
-                      Container(
-                        padding: EdgeInsets.all(17),
-                        child: GestureDetector(
-                          onTap: () { },
-                          child: Row(
-                            children: <Widget>[
-                              Container(
-                                child: Icon(
-                                  Icons.person,
+                    //Author
+                    Container(
+                      padding: EdgeInsets.all(17),
+                      child: GestureDetector(
+                        onTap: () { },
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              child: Icon(
+                                Icons.person,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.only(left: 15),
+                              child: Text(
+                                "Aminullah Taj Muhammad",
+                                style: TextStyle(
+                                  fontSize: 20,
                                   color: Colors.grey,
                                 ),
                               ),
-                              Container(
-                                padding: EdgeInsets.only(left: 15),
-                                child: Text(
-                                  "Aminullah Taj Muhammad",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.grey,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ), // Container
+                      ),
+                    ), // Container
 
-                      // Support Container
-                      Container(
-                        padding: EdgeInsets.only(left: 17, right: 17),
-                        child: GestureDetector(
-                          onTap: () {
-                          },
-                          child: Row(
-                            children: <Widget>[
-                              Container(
-                                child: Icon(
-                                  Icons.favorite,
-                                  color: Colors.grey,
-                                ),
+                    // Support Container
+                    Container(
+                      padding: EdgeInsets.only(left: 17, right: 17),
+                      child: GestureDetector(
+                        onTap: () {
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              child: Icon(
+                                Icons.favorite,
+                                color: Colors.grey,
                               ),
-                              Container(
-                                padding: EdgeInsets.only(left: 15),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      "Support",
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        color: Colors.grey,
-                                      ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.only(left: 15),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    "Support",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.grey,
                                     ),
-                                    Text(
-                                      "Give an star to show the support",
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        color: Colors.grey,
-                                      ),
+                                  ),
+                                  Text(
+                                    "Give an star to show the support",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.grey,
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ), // Container
+                      ),
+                    ), // Container
 
-                      // Fork On Github Container
-                      Container(
-                        padding: EdgeInsets.only(left: 17, right: 17, top: 17),
-                        child: GestureDetector(
-                          onTap: () {
+                    // Fork On Github Container
+                    Container(
+                      padding: EdgeInsets.only(left: 17, right: 17, top: 17),
+                      child: GestureDetector(
+                        onTap: () {
 
-                          },
-                          child: Row(
-                            children: <Widget>[
-                              Container(
-                                child: Icon(
-                                  Icons.call_split,
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              child: Icon(
+                                Icons.call_split,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.only(left: 15),
+                              child: Text(
+                                "Fork on Github",
+                                style: TextStyle(
+                                  fontSize: 20,
                                   color: Colors.grey,
                                 ),
                               ),
-                              Container(
-                                padding: EdgeInsets.only(left: 15),
-                                child: Text(
-                                  "Fork on Github",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.grey,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ), // Container
+                      ),
+                    ), // Container
 
-                      // Follow Me Container
-                      Container(
-                        padding: EdgeInsets.only(left: 17, right: 17, top: 17),
-                        child: GestureDetector(
-                          onTap: () {
+                    // Follow Me Container
+                    Container(
+                      padding: EdgeInsets.only(left: 17, right: 17, top: 17),
+                      child: GestureDetector(
+                        onTap: () {
 
-                          },
-                          child: Row(
-                            children: <Widget>[
-                              Container(
-                                child: Icon(
-                                  Icons.report,
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              child: Icon(
+                                Icons.report,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.only(left: 15),
+                              child: Text(
+                                "Report Issue",
+                                style: TextStyle(
+                                  fontSize: 20,
                                   color: Colors.grey,
                                 ),
                               ),
-                              Container(
-                                padding: EdgeInsets.only(left: 15),
-                                child: Text(
-                                  "Report Issue",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.grey,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ), // Container
-                    ],
-                  ),
+                      ),
+                    ), // Container
+                  ],
                 ),
-              )
+              ),
+            )
           ),
         ],
       ),
