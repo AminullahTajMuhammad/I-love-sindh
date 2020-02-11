@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:i_love_sindh/constants/constants.dart';
 import 'package:i_love_sindh/models/slide_model.dart';
@@ -24,12 +22,6 @@ class LaunchState extends State<OnBoardingScreen> {
 
   _onPageChanged(int value) {
     setState(() => _currentPage = value);
-  }
-
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
   }
 
   @override

@@ -47,6 +47,7 @@ flutter:
     - images/faiz_mahal.jpg
     - images/moen_jo_daro.jpg
     - images/ranikot_fort.jpg
+    - images/sindh.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
