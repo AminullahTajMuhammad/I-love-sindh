@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:i_love_sindh/constants/constants.dart';
 import 'package:i_love_sindh/screens/open_source_licenses/open_source_licenses_screen.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutScreen extends StatelessWidget {
   @override
@@ -35,7 +36,7 @@ class AboutScreen extends StatelessWidget {
           Container(
             margin: EdgeInsets.all(10),
             child: SizedBox(
-              height: 150,
+              height: 190,
               width: MediaQuery.of(context).size.width,
               child: Card(
                 elevation: 5,
@@ -142,6 +143,34 @@ class AboutScreen extends StatelessWidget {
                         ),
                       ),
                     ), // Container
+                    Container(
+                      padding: EdgeInsets.only(left: 17, right: 17, top: 17),
+                      child: GestureDetector(
+                        onTap: () {
+                          launch("https://stdc.gos.pk/");
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              child: Icon(
+                                Icons.info,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.only(left: 15),
+                              child: Text(
+                                "Visit STDC",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ), // Container
                   ],
                 ),
               ),
@@ -163,7 +192,7 @@ class AboutScreen extends StatelessWidget {
           Container(
             margin: EdgeInsets.all(10),
             child: SizedBox(
-              height: 200,
+              height: 160,
               width: MediaQuery.of(context).size.width,
               child: Card(
                 elevation: 5,
@@ -175,7 +204,9 @@ class AboutScreen extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(17),
                       child: GestureDetector(
-                        onTap: () { },
+                        onTap: () { 
+                          launch("https://aminullah.me/");
+                        },
                         child: Row(
                           children: <Widget>[
                             Container(
@@ -204,6 +235,7 @@ class AboutScreen extends StatelessWidget {
                       padding: EdgeInsets.only(left: 17, right: 17),
                       child: GestureDetector(
                         onTap: () {
+                          launch("https://github.com/AminullahTajMuhammad/I-love-sindh");
                         },
                         child: Row(
                           children: <Widget>[
@@ -245,7 +277,7 @@ class AboutScreen extends StatelessWidget {
                       padding: EdgeInsets.only(left: 17, right: 17, top: 17),
                       child: GestureDetector(
                         onTap: () {
-
+                          launch("https://github.com/AminullahTajMuhammad/I-love-sindh");
                         },
                         child: Row(
                           children: <Widget>[
@@ -259,36 +291,6 @@ class AboutScreen extends StatelessWidget {
                               padding: EdgeInsets.only(left: 15),
                               child: Text(
                                 "Fork on Github",
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.grey,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ), // Container
-
-                    // Follow Me Container
-                    Container(
-                      padding: EdgeInsets.only(left: 17, right: 17, top: 17),
-                      child: GestureDetector(
-                        onTap: () {
-
-                        },
-                        child: Row(
-                          children: <Widget>[
-                            Container(
-                              child: Icon(
-                                Icons.report,
-                                color: Colors.grey,
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.only(left: 15),
-                              child: Text(
-                                "Report Issue",
                                 style: TextStyle(
                                   fontSize: 20,
                                   color: Colors.grey,

@@ -62,10 +62,10 @@ class LaunchToursState extends State<ToursScreen> {
                           new Image.network(
                             citiesList[index]['imageUrl'],
                             fit: BoxFit.cover,
-                            height: 110,
+                            height: 130,
                           ),
                           Container(
-                            padding: EdgeInsets.only(top: 15, left: 10),
+                            padding: EdgeInsets.only(top: 20, left: 10),
                             child: Text(
                               citiesList[index]['name'],
                               style: TextStyle(
