@@ -18,16 +18,16 @@ final slideItemList = [
   SliderModel(
       imgUrl: "images/faiz_mahal.jpg",
       title: Constants.TITLE1,
-      desc: Constants.DESC1
+      desc: Constants.DESC_KHEIRPUR
   ),
   SliderModel(
       imgUrl: "images/moen_jo_daro.jpg",
       title: Constants.TITLE2,
-      desc: Constants.DESC2
+      desc: Constants.DESC_MEON_JO_DARO
   ),
   SliderModel(
       imgUrl: "images/ranikot_fort.jpg",
       title: Constants.TITLE3,
-      desc: Constants.DESC3
+      desc: Constants.DESC_MEON_JO_DARO
   )
 ];

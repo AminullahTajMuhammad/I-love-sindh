@@ -34,7 +34,7 @@ class SliderViews extends StatelessWidget {
           ),
 
           Container(
-            padding: EdgeInsets.only(top: 12.0),
+            padding: EdgeInsets.only(top: 12.0, left: 5, right: 5),
             child: Text(
               slideItemList[index].desc,
               textAlign: TextAlign.center,

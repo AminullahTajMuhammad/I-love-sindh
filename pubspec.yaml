@@ -45,9 +45,14 @@ flutter:
   assets:
     - images/logo.png
     - images/faiz_mahal.jpg
+    - images/mandir.jpg
     - images/moen_jo_daro.jpg
+    - images/mohatta_karachi.jpg
     - images/ranikot_fort.jpg
     - images/sindh.jpg
+    - images/sukkur_bridge.jpg
+
+    - api/data.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

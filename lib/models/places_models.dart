@@ -1,13 +1,19 @@
 class PlacesModel {
   String placeName;
   String imgUrl;
+  String about;
+  dynamic latitude;
+  dynamic longitude;
 
-  PlacesModel(this.placeName, this.imgUrl);
+  PlacesModel({this.placeName, this.about, this.imgUrl, this.latitude, this.longitude});
+
+  factory PlacesModel.fromJson(Map<String, dynamic> placesData) {
+    return PlacesModel(
+      placeName: placesData['name'],
+      about: placesData['about'],
+      imgUrl: placesData['imgUrl'],
+      latitude: placesData['latitude'],
+      longitude: placesData['longitude']
+    );
+  }
 }
-
-final placesItems = [
-  PlacesModel("Karachi", "images/ranikot_fort.jpg"),
-  PlacesModel("Larkana", "images/faiz_mahal.jpg"),
-  PlacesModel("Thar", "images/moen_jo_daro.jpg"),
-  PlacesModel("Khairpur", "images/faiz_mahal.jpg"),
-];

@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:i_love_sindh/constants/constants.dart';
+import 'package:i_love_sindh/models/places_models.dart';
 
 class PlaceDetailsScreen extends StatefulWidget {
+  final PlacesModel placeModel;
+  PlaceDetailsScreen({this.placeModel});
+
   @override
-  State<StatefulWidget> createState() => _LaunchPlaceDetailsState();
+  State<StatefulWidget> createState() => _LaunchPlaceDetailsState(this.placeModel);
 }
 
 class _LaunchPlaceDetailsState extends State<PlaceDetailsScreen> {
+  final PlacesModel model;
+  _LaunchPlaceDetailsState(this.model);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +30,7 @@ class _LaunchPlaceDetailsState extends State<PlaceDetailsScreen> {
           ),
         ),
         title: Text(
-          "Details",
+          model.placeName,
           style: TextStyle(
             color: Color(Constants.PRIMARY_COLOR),
           ),
@@ -36,31 +43,31 @@ class _LaunchPlaceDetailsState extends State<PlaceDetailsScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Image.asset(
-                  "images/sindh.jpg",
+                Image.network(
+                  model.imgUrl,
                   fit: BoxFit.cover,
                 ),
                 Container(
-                    padding: EdgeInsets.only(left: 15, top: 15),
-                    child: Text(
-                      "About",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25
-                      ),
-                    )
+                  padding: EdgeInsets.only(left: 15, top: 15),
+                  child: Text(
+                    "About",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25
+                    ),
+                  )
                 ),
                 Container(
-                    padding: EdgeInsets.only(left: 15, top: 10, right: 15, bottom: 100),
-                    child: Text(
-                      Constants.LANGUAGE_OF_SINDH + Constants.HISTORY_OF_SINDH,
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20,
-                      ),
-                    )
+                  padding: EdgeInsets.only(left: 15, top: 10, right: 15, bottom: 100),
+                  child: Text(
+                    model.about,
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
+                  )
                 ),
               ],
             ),
@@ -77,7 +84,7 @@ class _LaunchPlaceDetailsState extends State<PlaceDetailsScreen> {
               child: Text(
                 "Direction",
                 style: TextStyle(
-                    color: Colors.white
+                  color: Colors.white
                 ),
               ),
             ),

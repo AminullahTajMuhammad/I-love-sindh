@@ -1,13 +1,26 @@
+import 'dart:convert';
+
+import 'package:flutter/cupertino.dart';
+import 'package:i_love_sindh/models/places_models.dart';
+
 class CitiesModel {
-  String name;
-  String imgUrl;
+  final String name;
+  final String imgUrl;
+  final List<PlacesModel> places;
 
-  CitiesModel(this.name, this.imgUrl);
+  CitiesModel({this.name, this.imgUrl, this.places});
+
+//  factory CitiesModel.fromJson(Map<String, dynamic> data) {
+//    return CitiesModel(
+//      name: data['name'],
+//      imgUrl: data['imgUrl'],
+//      places: parsePlaces(data),
+//    );
+//  }
+//
+//  static List<PlacesModel> parsePlaces(placesJson) {
+//    var list = placesJson['places'] as List;
+//    List<PlacesModel> placesList = list.map((data) => PlacesModel.fromJson(data)).toList();
+//    return placesList;
+//  }
 }
-
-final items = [
-  CitiesModel("Karachi", "images/ranikot_fort.jpg"),
-  CitiesModel("Larkana", "images/faiz_mahal.jpg"),
-  CitiesModel("Thar", "images/moen_jo_daro.jpg"),
-  CitiesModel("Khairpur", "images/faiz_mahal.jpg"),
-];

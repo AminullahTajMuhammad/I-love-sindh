@@ -11,8 +11,12 @@ class HomeScreen extends StatefulWidget {
 class LaunchHomeState extends State<HomeScreen> {
   final _images = [
     "images/faiz_mahal.jpg",
+    "images/mandir.jpg",
     "images/moen_jo_daro.jpg",
-    "images/ranikot_fort.jpg"
+    "images/mohatta_karachi.jpg",
+    "images/ranikot_fort.jpg",
+    "images/sindh.jpg",
+    "images/sukkur_bridge.jpg",
   ];
   int _current = 0;
   @override
@@ -38,12 +42,12 @@ class LaunchHomeState extends State<HomeScreen> {
               items: <Widget>[
                 for(int i = 0 ; i < _images.length; i++)
                   Container(
-                      padding: EdgeInsets.all(10),
+                      padding: EdgeInsets.all(5),
                       child: Image.asset(
                         _images[i],
                         fit: BoxFit.cover,
                         height: 200,
-                        width: 550,
+                        width: MediaQuery.of(context).size.width,
                       )
                   )
               ],
@@ -126,7 +130,7 @@ class LaunchHomeState extends State<HomeScreen> {
             Container(
               padding: EdgeInsets.all(10),
               child: Text(
-                Constants.LANGUAGE_OF_SINDH,
+                Constants.HISTORY_OF_SINDH2,
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.grey,
