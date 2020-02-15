@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:i_love_sindh/constants/constants.dart';
+import 'package:i_love_sindh/screens/open_source_licenses/open_source_licenses_screen.dart';
 
 class AboutScreen extends StatelessWidget {
   @override
@@ -69,7 +70,7 @@ class AboutScreen extends StatelessWidget {
                             Container(
                               padding: EdgeInsets.only(left: MediaQuery.of(context).size.width - 210, top: 5),
                               child: Text(
-                                "1.2",
+                                "1.0.0",
                                 style: TextStyle(
                                     fontSize: 18,
                                     color: Colors.grey
@@ -115,7 +116,9 @@ class AboutScreen extends StatelessWidget {
                       padding: EdgeInsets.only(left: 17, right: 17, top: 17),
                       child: GestureDetector(
                         onTap: () {
-
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => OpenSourceLicensesScreen()
+                          ));
                         },
                         child: Row(
                           children: <Widget>[

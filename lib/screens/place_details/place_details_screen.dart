@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:i_love_sindh/constants/constants.dart';
 import 'package:i_love_sindh/models/places_models.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PlaceDetailsScreen extends StatefulWidget {
   final PlacesModel placeModel;
@@ -77,7 +78,7 @@ class _LaunchPlaceDetailsState extends State<PlaceDetailsScreen> {
             margin: EdgeInsets.all(10),
             child: MaterialButton(
               onPressed: () => {
-
+                _navigateToGoogleMaps()
               },
               minWidth: MediaQuery.of(context).size.width,
               color: Color(Constants.PRIMARY_COLOR),
@@ -92,5 +93,28 @@ class _LaunchPlaceDetailsState extends State<PlaceDetailsScreen> {
         ],
       ),
     );
+  }
+
+  _navigateToGoogleMaps() async {
+    bool isIOS = Theme.of(context).platform == TargetPlatform.iOS;
+    String googleUrl = '';
+    if (isIOS) {
+      googleUrl =
+      'comgooglemapsurl://maps.google.com/maps?f=d&daddr=${model.latitude},${model.longitude}&sspn=0.2,0.1';
+      String appleMapsUrl =
+          'https://maps.apple.com/?sll=${model.latitude},${model.longitude}';
+      if (await canLaunch("comgooglemaps://")) {
+        print('launching com googleUrl');
+        await launch(googleUrl);
+      } else if (await canLaunch(appleMapsUrl)) {
+        print('launching apple url');
+        await launch(appleMapsUrl);
+      } else {
+        await launch(
+            'https://www.google.com/maps/search/?api=1&query=${model.latitude},${model.longitude}');
+      }
+    } else {
+      await launch('https://www.google.com/maps/search/?api=1&query=${model.latitude},${model.longitude}');
+    }
   }
 }
