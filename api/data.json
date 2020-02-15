@@ -1,7 +1,7 @@
 [
   {
     "name": "Karachi",
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795076/karachi_houluk.jpg",
     "places": [
       {
         "name": "Mohatta Palace Museum",
@@ -35,7 +35,7 @@
   },
   {
     "name": "Dadu",
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/10/54/d3/46/necropolis-of-mian-nasir.jpg",
     "places": [
       {
         "name": "Wahi Pandhi Mound, Dadu ",
@@ -61,8 +61,9 @@
     ]
   },
   {
+
     "name": "Khairput",
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795079/Faiz_Mahal_Khairpur_Sindh_t1i1q6.jpg",
     "places" : [
       {
         "name": "Shrine of Sachal Sarmast ",
@@ -96,7 +97,7 @@
   },
   {
     "name": "Nawabshah",
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795650/nawabshah_adj33y.jpg",
     "places": [
       {
         "name": "Buddhist Stupa",
@@ -116,7 +117,7 @@
   },
   {
     "name": "Sanghar",
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795649/sanghar_wzjeap.jpg",
     "places": [
       {
         "name": "Historical Graveyard",
@@ -142,8 +143,8 @@
     ]
   },
   {
-    "name": "Sanghar" ,
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "name": "Jamshoro" ,
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795655/jamshoro_ve7c1z.jpg",
     "places": [
       {
         "name": "Shrine of Laki Shah Sadar",
@@ -184,7 +185,7 @@
   },
   {
     "name": "Hyderabad" ,
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795654/hyd_w3l5fv.jpg",
     "places": [
       {
         "name": "Provincial Museum, Hyderabad ",
@@ -232,7 +233,7 @@
   },
   {
     "name": "Thatta" ,
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795650/thatta_ueu4iq.jpg",
     "places": [
       {
         "name": "Tomb of Shaikh Hamad",
@@ -301,7 +302,7 @@
   },
   {
     "name": "Sukkur" ,
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795075/sukkur_bridge_iwmy9r.jpg",
     "places": [
       {
         "name": "Sadh Belo",
@@ -342,7 +343,7 @@
   },
   {
     "name": "Matiari" ,
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795649/matiyari_vfilvq.jpg",
     "places": [
       {
         "name": "Shah Abdul Latif Bhittai",
@@ -362,7 +363,7 @@
   },
   {
     "name": "UmerKot" ,
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795077/ranikot-fort_pgr0gf.jpg",
     "places": [
       {
         "name": "Archaeological Museum",
@@ -382,7 +383,7 @@
   },
   {
     "name": "Tharparkar",
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dwncqcoor/image/upload/v1581795650/thar_p5p92n.jpg",
     "places": [
       {
         "name": "Karoonjhar Mountains",
@@ -423,7 +424,7 @@
   },
   {
     "name": "Ghotki",
-    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581453466/mohatta_palace_museum.jpg",
+    "imageUrl": "https://res.cloudinary.com/dafqx2e4k/image/upload/v1581541052/Moomal_ji_Mari_ghotki.jpg",
     "places": [
       {
         "name": "Moomal ji Mari",
