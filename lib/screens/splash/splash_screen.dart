@@ -9,6 +9,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class LaunchState extends State<SplashScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,12 +31,12 @@ class LaunchState extends State<SplashScreen> {
 
   @override
   void initState() {
-    startTimer();
     super.initState();
+    startTimer();
   }
 
   startTimer() async {
-    var duration = Duration(seconds: 5);
+    var duration = Duration(seconds: 2);
     return Timer(
       duration,
       route
@@ -43,11 +44,8 @@ class LaunchState extends State<SplashScreen> {
   }
 
   route() {
-    Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-            builder: (context) => OnBoardingScreen()
-        )
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (context) => OnBoardingScreen())
     );
   }
 }

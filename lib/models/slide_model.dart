@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:i_love_sindh/constants/constants.dart';
 
 class SliderModel {

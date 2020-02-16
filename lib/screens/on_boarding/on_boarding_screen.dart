@@ -16,8 +16,8 @@ class LaunchState extends State<OnBoardingScreen> {
 
   @override
   void initState() {
-    _currentPage = 0;
     super.initState();
+    _currentPage = 0;
   }
 
   _onPageChanged(int value) {
@@ -74,7 +74,7 @@ class LaunchState extends State<OnBoardingScreen> {
           mini: true,
           onPressed: () {
             Navigator.pushReplacement(context, MaterialPageRoute(
-              builder: (context) => MainLandingScreen(),
+              builder: (context) => MainLandingScreen()
             ));
           },
           backgroundColor: Color(Constants.PRIMARY_COLOR),
