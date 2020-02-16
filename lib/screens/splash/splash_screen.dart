@@ -19,7 +19,7 @@ class LaunchState extends State<SplashScreen> {
           children: <Widget>[
             Container(
               child: Image.asset(
-                "images/logo.png",
+                "images/app_log.png",
                 height: 200,
               ),
             ),
@@ -31,8 +31,8 @@ class LaunchState extends State<SplashScreen> {
 
   @override
   void initState() {
-    super.initState();
     startTimer();
+    super.initState();
   }
 
   startTimer() async {
