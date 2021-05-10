@@ -11,6 +11,8 @@ class MainLandingScreen extends StatefulWidget {
 
 class LaunchState extends State<MainLandingScreen> {
   int selectedIndex = 0;
+  bool isHome = true;
+
   final _screens = [
     HomeScreen(),
     ToursScreen(),
@@ -18,7 +20,7 @@ class LaunchState extends State<MainLandingScreen> {
   ];
 
 
-  build(BuildContext context) => initScreen();
+  //build(BuildContext context) => initScreen();
 
   initScreen() {
     return Scaffold(
@@ -29,7 +31,12 @@ class LaunchState extends State<MainLandingScreen> {
         selectedItemColor: Color(Constants.PRIMARY_COLOR),
         onTap: (int index) {
           setState(() {
-            selectedIndex = index;
+            if(index == 0) {
+              isHome = true;
+            } else {
+              isHome = false;
+              selectedIndex = index;
+            }
           });
         },
         items: [
@@ -53,6 +60,24 @@ class LaunchState extends State<MainLandingScreen> {
           ),
         ],
       ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return WillPopScope(
+      child: initScreen(),
+      onWillPop: () async {
+        if(isHome) {
+          return true;
+        } else {
+          isHome = true;
+          setState(() {
+            selectedIndex = 0;
+          });
+          return false;
+        }
+      },
     );
   }
 
